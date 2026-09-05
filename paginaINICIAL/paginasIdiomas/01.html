@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Deutsch & English — Livro de Diálogos (Bloco 1)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=EB+Garamond:ital@0;1&display=swap');
+
+  body {
+    font-family: 'EB Garamond', Georgia, serif;
+    background: #f7f2e9;
+    color: #2a2118;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 4rem 3rem 6rem;
+    line-height: 1.9;
+    font-size: 1.15rem;
+  }
+
+  .book-title { text-align: center; margin-bottom: 4rem; }
+  .book-title h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    margin: 0;
+    letter-spacing: 0.02em;
+  }
+  .book-title .sub { font-style: italic; color: #8a7a5c; margin-top: 0.5rem; font-size: 1.1rem; }
+  .ornament { text-align: center; color: #b89b5e; font-size: 1.4rem; margin: 2rem 0; }
+
+  h2.chapter {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #4a3826;
+    margin: 5rem 0 0.2rem;
+  }
+  .chapter-num {
+    display: block;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #b89b5e;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .chapter-sub { text-align: center; font-style: italic; color: #8a7a5c; margin-bottom: 3rem; }
+
+  h3.lang-flag {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #6b4423;
+    border-bottom: 1px solid #d8c9a3;
+    padding-bottom: 0.4rem;
+    margin: 3.5rem 0 1.8rem;
+    letter-spacing: 0.03em;
+  }
+
+  p.fala { margin: 0 0 1.4rem; text-indent: 1.5em; }
+  p.fala:first-of-type { margin-top: 0; }
+  .personagem { font-family: 'Playfair Display', serif; font-weight: 600; font-style: italic; color: #6b4423; }
+  .stage { font-style: italic; color: #a08d68; font-size: 0.92em; }
+
+  hr.sep { border: none; text-align: center; margin: 4rem 0; }
+  hr.sep::after { content: "❖ ❖ ❖"; color: #b89b5e; letter-spacing: 0.5em; }
+
+  /* Seção PT recolhível */
+  details.pt-support {
+    background: #f0ece0;
+    border: 1px dashed #c9b98a;
+    border-radius: 6px;
+    padding: 0.3rem 1.6rem 0.3rem;
+    margin: 2.5rem 0 1rem;
+  }
+  details.pt-support summary {
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #7a6a4c;
+    padding: 1rem 0;
+    list-style: none;
+  }
+  details.pt-support summary::-webkit-details-marker { display: none; }
+  details.pt-support summary::before { content: "🇧🇷 "; }
+  details.pt-support summary::after { content: " ▾"; color: #b89b5e; }
+  details.pt-support[open] summary::after { content: " ▴"; }
+  details.pt-support p.fala { color: #5a4e38; }
+
+  .box {
+    background: #fffdf7;
+    border: 1px solid #e3d5ac;
+    border-radius: 4px;
+    padding: 2rem 2.2rem;
+    margin: 2.5rem 0;
+  }
+  .box h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6b4423;
+    margin-top: 0;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .vitem { margin-bottom: 1.3rem; text-indent: 0; }
+  .vitem .term { font-weight: 700; color: #4a3826; font-family: 'Playfair Display', serif; }
+  .tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.1rem 0.6rem;
+    border-radius: 10px;
+    margin-left: 0.5rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  .tag.formal { background: #dfe9f5; color: #2c4d7a; }
+  .tag.informal { background: #f5e3d0; color: #8a4f1e; }
+  .tag.neutro { background: #e4ecdc; color: #3d5c2e; }
+  .vitem .ctx { color: #5a4e38; font-size: 0.95rem; display: block; margin: 0.3rem 0; }
+  .vitem .ex { color: #7a6a4c; font-size: 0.92rem; font-style: italic; display: block; }
+  .vitem .ex::before { content: "▸ "; font-style: normal; color: #b89b5e; }
+
+  .gram {
+    background: #eef2fb;
+    border: 1px solid #cdd9ee;
+    border-radius: 4px;
+    padding: 1.6rem 2rem;
+    margin: 1.5rem 0;
+    text-indent: 0;
+    font-size: 0.98rem;
+  }
+  .gram strong { color: #2c4d7a; font-family: 'Playfair Display', serif; }
+
+  .exbox { margin: 3rem 0; }
+  .exbox h3 { font-family: 'Playfair Display', serif; color: #4a6b42; font-size: 1.3rem; text-align: center; margin-bottom: 1.5rem; }
+  .exbox ol { padding-left: 1.5rem; }
+  .exbox li { margin-bottom: 0.8rem; }
+
+  details.gab {
+    background: #fdf3e3;
+    border: 1px solid #d8b978;
+    border-radius: 4px;
+    padding: 1.2rem 2rem;
+    margin: 1.5rem 0 3rem;
+  }
+  details.gab summary { cursor: pointer; font-family: 'Playfair Display', serif; font-weight: 600; color: #8a5a1e; }
+  details.gab p { text-indent: 0; margin: 0.8rem 0; }
+
+  .note { font-style: italic; font-size: 0.95rem; color: #7a6a4c; text-align: center; margin: 2rem 0 4rem; text-indent: 0; }
+</style>
+</head>
+<body>
+
+<div class="book-title">
+  <h1>Deutsch &amp; English</h1>
+  <div class="sub">Um Livro de Diálogos — Bloco 1</div>
+</div>
+
+<p class="note">Este material foi pensado para imersão: leia e pratique em inglês e alemão primeiro. A tradução em português está disponível como apoio recolhível — abra somente se precisar conferir o sentido.</p>
+
+<div class="ornament">❦</div>
+
+<!-- ============ CAPÍTULO 1 ============ -->
+<span class="chapter-num">Capítulo Primeiro</span>
+<h2 class="chapter">Dor nas Costas</h2>
+<p class="chapter-sub">Anna &amp; Max</p>
+
+<h3 class="lang-flag">🇬🇧 English</h3>
+
+<p class="fala"><span class="personagem">Anna:</span> Oh, my back hurt so much yesterday! I tried to stretch my spine, but afterward it felt kind of dislocated.</p>
+<p class="fala"><span class="personagem">Max:</span> Maybe you bent over too far. That can easily happen when you're not being careful. Where exactly did it hurt?</p>
+<p class="fala"><span class="personagem">Anna:</span> Especially near my shoulder and in my trunk. Sometimes I even felt a slight twitching.</p>
+<p class="fala"><span class="personagem">Max:</span> Did you try flexing your muscles back then, or gently lifting and lowering your stomach? That often helped relax the area.</p>
+<p class="fala"><span class="personagem">Anna:</span> Yeah, a little. But every time I tensed my stomach, it felt more like stomach cramps.</p>
+<p class="fala"><span class="personagem">Max</span> <span class="stage">(laughing):</span> Maybe you should've just lain down and not furrowed your forehead so much. You looked like you were thinking way too hard.</p>
+<p class="fala"><span class="personagem">Anna:</span> Probably because I was worried. What if I couldn't move properly anymore?</p>
+<p class="fala"><span class="personagem">Max:</span> Don't worry, I'm sure it settled down again. I helped you stretch carefully back then, remember? But if it hadn't gotten better, you should've gone to the doctor.</p>
+<p class="fala"><span class="personagem">Anna:</span> Yeah, you were right. Thanks again for your help! I ended up skipping training after that.</p>
+
+<h3 class="lang-flag">🇩🇪 Deutsch</h3>
+
+<p class="fala"><span class="personagem">Anna:</span> Oh, mein Rücken tat gestern so weh! Ich hatte versucht, meine Wirbelsäule zu strecken, aber danach fühlte es sich irgendwie verrenkt an.</p>
+<p class="fala"><span class="personagem">Max:</span> Vielleicht hattest du dich zu stark gebeugt. Das konnte leicht passieren, wenn man nicht vorsichtig war. Wo genau tat es weh?</p>
+<p class="fala"><span class="personagem">Anna:</span> Besonders in der Nähe der Schulter und im Rumpf. Manchmal hatte ich sogar ein leichtes Zucken gespürt.</p>
+<p class="fala"><span class="personagem">Max:</span> Hast du damals versucht, die Muskeln anzuspannen oder den Bauch sanft zu heben und zu senken? Das hatte oft geholfen, die Gegend zu entspannen.</p>
+<p class="fala"><span class="personagem">Anna:</span> Ja, ein bisschen. Aber jedes Mal, wenn ich den Bauch angespannt hatte, fühlte es sich eher wie Bauchkrämpfe an.</p>
+<p class="fala"><span class="personagem">Max</span> <span class="stage">(lachend):</span> Vielleicht hättest du dich einfach hinlegen und deine Stirn nicht so sehr runzeln sollen. Du sahst aus, als hättest du viel nachgedacht.</p>
+<p class="fala"><span class="personagem">Anna:</span> Wahrscheinlich, weil ich mir Sorgen gemacht hatte. Was, wenn ich mich nicht mehr richtig bewegen könnte?</p>
+<p class="fala"><span class="personagem">Max:</span> Keine Sorge, das hatte sich sicher wieder gelegt. Ich hatte dir damals geholfen, dich vorsichtig zu strecken, oder? Aber wenn es nicht besser geworden wäre, hättest du zum Arzt gehen sollen.</p>
+<p class="fala"><span class="personagem">Anna:</span> Ja, du hattest recht. Danke nochmal für deine Hilfe! Ich hatte dann das Training ausfallen lassen.</p>
+
+<details class="pt-support">
+<summary>Ver tradução de apoio em Português</summary>
+<p class="fala"><span class="personagem">Anna:</span> Ai, minhas costas doeram tanto ontem! Tentei alongar a coluna, mas depois ela ficou meio deslocada.</p>
+<p class="fala"><span class="personagem">Max:</span> Talvez você tenha se curvado demais. Isso pode acontecer facilmente quando não se toma cuidado. Onde exatamente dói?</p>
+<p class="fala"><span class="personagem">Anna:</span> Principalmente perto do ombro e no tronco. Às vezes até sinto um leve tremor.</p>
+<p class="fala"><span class="personagem">Max:</span> Você tentou contrair os músculos ou levantar e abaixar a barriga suavemente? Isso costuma ajudar a relaxar a região.</p>
+<p class="fala"><span class="personagem">Anna:</span> Sim, um pouco. Mas cada vez que contraía a barriga, parecia mais uma cãibra abdominal.</p>
+<p class="fala"><span class="personagem">Max</span> <span class="stage">(rindo):</span> Talvez fosse melhor você se deitar e parar de franzir tanto a testa. Parecia que estava pensando demais.</p>
+<p class="fala"><span class="personagem">Anna:</span> Provavelmente porque eu estava preocupada. E se eu não pudesse mais me mover corretamente?</p>
+<p class="fala"><span class="personagem">Max:</span> Sem se preocupar, isso certamente melhorou depois. Eu te ajudei a se alongar com cuidado, lembra? Mas, se não tivesse melhorado, você deveria ter ido ao médico.</p>
+<p class="fala"><span class="personagem">Anna:</span> Sim, você estava certo. Obrigada de novo pela ajuda! Acabei faltando ao treino.</p>
+</details>
+
+<hr class="sep">
+
+<!-- ============ CAPÍTULO 2 ============ -->
+<span class="chapter-num">Capítulo Segundo</span>
+<h2 class="chapter">Dor no Cotovelo</h2>
+<p class="chapter-sub">Lena &amp; Tom</p>
+
+<h3 class="lang-flag">🇬🇧 English</h3>
+
+<p class="fala"><span class="personagem">Lena:</span> Yesterday I had such intense pain in my elbow. I think I must've bumped it somewhere.</p>
+<p class="fala"><span class="personagem">Tom:</span> Oh no, that doesn't sound good. Was it the bone that hurt, or more like a tendon?</p>
+<p class="fala"><span class="personagem">Lena:</span> It felt like the tendon was inflamed. But the pain radiated all the way down my limb, especially when I moved it.</p>
+<p class="fala"><span class="personagem">Tom:</span> Did you try tapping the area gently to figure out where it hurt the most?</p>
+<p class="fala"><span class="personagem">Lena:</span> Yeah, a little. And every time I tapped it lightly, the pain got worse.</p>
+<p class="fala"><span class="personagem">Tom:</span> Hmm, maybe a bit of rest would've helped. Did you ice the area or treat it with a cream to help it heal?</p>
+<p class="fala"><span class="personagem">Lena:</span> I tried cooling it, but honestly, it didn't help much.</p>
+<p class="fala"><span class="personagem">Tom:</span> Maybe it was a more serious injury. If it doesn't get better, you should really go see a doctor.</p>
+<p class="fala"><span class="personagem">Lena:</span> Yeah, I will. Thanks for listening to me.</p>
+
+<h3 class="lang-flag">🇩🇪 Deutsch</h3>
+
+<p class="fala"><span class="personagem">Lena:</span> Gestern hatte ich so starke Schmerzen im Ellenbogen. Ich glaube, ich hatte ihn irgendwo angeschlagen.</p>
+<p class="fala"><span class="personagem">Tom:</span> Oh nein, das klingt nicht gut. War es der Knochen, der wehgetan hat, oder eher eine Sehne?</p>
+<p class="fala"><span class="personagem">Lena:</span> Es fühlte sich an, als wäre die Sehne entzündet. Aber der Schmerz zog bis ins Glied, besonders wenn ich es bewegt habe.</p>
+<p class="fala"><span class="personagem">Tom:</span> Hattest du versucht, die Stelle vorsichtig abzuklopfen, um zu sehen, wo es am schlimmsten war?</p>
+<p class="fala"><span class="personagem">Lena:</span> Ja, ein bisschen. Und jedes Mal, wenn ich leicht geklopft habe, wurde der Schmerz schlimmer.</p>
+<p class="fala"><span class="personagem">Tom:</span> Hm, vielleicht hätte ein bisschen Ruhe geholfen. Hattest du die Stelle gekühlt oder mit einer Creme behandelt, um sie zu heilen?</p>
+<p class="fala"><span class="personagem">Lena:</span> Ich hatte versucht, es zu kühlen, aber ehrlich gesagt, es hat nicht viel geholfen.</p>
+<p class="fala"><span class="personagem">Tom:</span> Vielleicht war es eine stärkere Verletzung. Wenn es nicht besser wird, solltest du wirklich zum Arzt gehen.</p>
+<p class="fala"><span class="personagem">Lena:</span> Ja, das werde ich machen. Danke, dass du mir zugehört hast.</p>
+
+<details class="pt-support">
+<summary>Ver tradução de apoio em Português</summary>
+<p class="fala"><span class="personagem">Lena:</span> Ontem senti uma dor muito forte no cotovelo. Acho que bati nele em algum lugar.</p>
+<p class="fala"><span class="personagem">Tom:</span> Ah, não, isso não parece bom. Era o osso que doía, ou mais um tendão?</p>
+<p class="fala"><span class="personagem">Lena:</span> Parecia que o tendão estava inflamado. Mas a dor se espalhava até o braço, especialmente quando eu o movia.</p>
+<p class="fala"><span class="personagem">Tom:</span> Você tentou tocar levemente no local para descobrir onde doía mais?</p>
+<p class="fala"><span class="personagem">Lena:</span> Sim, um pouco. E cada vez que tocava de leve, a dor piorava.</p>
+<p class="fala"><span class="personagem">Tom:</span> Hmm, talvez um pouco de descanso tivesse ajudado. Você gelou o local ou passou algum creme para curar?</p>
+<p class="fala"><span class="personagem">Lena:</span> Tentei gelar, mas, sinceramente, não ajudou muito.</p>
+<p class="fala"><span class="personagem">Tom:</span> Talvez fosse uma lesão mais séria. Se não melhorar, você realmente deveria ir ao médico.</p>
+<p class="fala"><span class="personagem">Lena:</span> Sim, vou fazer isso. Obrigada por me escutar.</p>
+</details>
+
+<hr class="sep">
+
+<!-- ============ CAPÍTULO 3 ============ -->
+<span class="chapter-num">Capítulo Terceiro</span>
+<h2 class="chapter">Problemas Estomacais</h2>
+<p class="chapter-sub">Julia &amp; Paul</p>
+
+<h3 class="lang-flag">🇬🇧 English</h3>
+
+<p class="fala"><span class="personagem">Julia:</span> Yesterday I felt really awful. My stomach hurt so badly, and I could barely digest anything.</p>
+<p class="fala"><span class="personagem">Paul:</span> That sounds terrible. Did you eat something that had gone bad? Or did you even throw up?</p>
+<p class="fala"><span class="personagem">Julia:</span> Yes, several times. And every time afterward I burped so hard it was really uncomfortable.</p>
+<p class="fala"><span class="personagem">Paul:</span> And how did you feel otherwise? Did your heartbeat speed up, or did your breathing change?</p>
+<p class="fala"><span class="personagem">Julia:</span> Yeah, my heartbeat was really fast, and I was panting hard. It felt like I couldn't get enough air. Later I lay down, and thankfully my heartbeat gradually slowed back down.</p>
+<p class="fala"><span class="personagem">Paul:</span> Good thing it got better. But did you try to stay calm and control your breathing? Or was it more choppy and irregular?</p>
+<p class="fala"><span class="personagem">Julia:</span> I tried to calm myself down, but it was hard. It was almost as if my brain had just shut off for a moment.</p>
+<p class="fala"><span class="personagem">Paul:</span> That sounds serious, Julia. You really should've called a doctor right away.</p>
+<p class="fala"><span class="personagem">Julia:</span> Yeah, you're right. If it doesn't get better today, I'll definitely go.</p>
+
+<h3 class="lang-flag">🇩🇪 Deutsch</h3>
+
+<p class="fala"><span class="personagem">Julia:</span> Gestern ging es mir wirklich schlecht. Mein Magen hatte so stark wehgetan, und ich konnte kaum etwas verdauen.</p>
+<p class="fala"><span class="personagem">Paul:</span> Das klingt schlimm. Hattest du etwas gegessen, das schlecht war? Oder hattest du sogar erbrochen?</p>
+<p class="fala"><span class="personagem">Julia:</span> Ja, mehrmals. Und jedes Mal hatte ich danach so stark aufgestoßen, dass es richtig unangenehm war.</p>
+<p class="fala"><span class="personagem">Paul:</span> Und wie ging es dir sonst? Hatte sich dein Herzschlag vielleicht beschleunigt oder deine Atmung verändert?</p>
+<p class="fala"><span class="personagem">Julia:</span> Ja, mein Herzschlag war total schnell, und ich hatte richtig schwer gekeucht. Es fühlte sich an, als ob mein Atem nicht ausreichte. Später hatte ich mich hingelegt, und zum Glück hatte sich mein Herzschlag langsam wieder verlangsamt.</p>
+<p class="fala"><span class="personagem">Paul:</span> Gut, dass es besser wurde. Aber hattest du versucht, ruhig zu bleiben und deine Atmung zu kontrollieren? Oder war sie eher stotternd und unregelmäßig?</p>
+<p class="fala"><span class="personagem">Julia:</span> Ich hatte versucht, mich zu beruhigen, aber es war schwierig. Es war fast so, als hätte mein Gehirn für einen Moment ausgesetzt.</p>
+<p class="fala"><span class="personagem">Paul:</span> Das klingt ernst, Julia. Hättest du doch besser gleich einen Arzt gerufen.</p>
+<p class="fala"><span class="personagem">Julia:</span> Ja, du hast recht. Wenn es heute nicht besser wird, gehe ich definitiv hin.</p>
+
+<details class="pt-support">
+<summary>Ver tradução de apoio em Português</summary>
+<p class="fala"><span class="personagem">Julia:</span> Ontem eu me sentia muito mal. Meu estômago doía tanto que eu quase não conseguia digerir nada.</p>
+<p class="fala"><span class="personagem">Paul:</span> Isso parece grave. Você comeu algo estragado? Ou chegou a vomitar?</p>
+<p class="fala"><span class="personagem">Julia:</span> Sim, várias vezes. E depois de cada vez, arrotava tão forte que era bem desconfortável.</p>
+<p class="fala"><span class="personagem">Paul:</span> E como você estava de resto? Seus batimentos aceleraram, ou a respiração mudou?</p>
+<p class="fala"><span class="personagem">Julia:</span> Sim, meu coração batia muito rápido, e eu respirava com muita dificuldade. Parecia que o ar não era suficiente. Depois me deitei e, felizmente, meus batimentos foram desacelerando de novo.</p>
+<p class="fala"><span class="personagem">Paul:</span> Que bom que melhorou. Mas você tentou ficar calma e controlar a respiração? Ou ela ficava irregular e entrecortada?</p>
+<p class="fala"><span class="personagem">Julia:</span> Tentei me calmar, mas foi difícil. Foi quase como se meu cérebro tivesse desligado por um instante.</p>
+<p class="fala"><span class="personagem">Paul:</span> Isso parece sério, Julia. Você deveria ter chamado um médico na hora.</p>
+<p class="fala"><span class="personagem">Julia:</span> Sim, você tem razão. Se não melhorar hoje, eu definitivamente vou.</p>
+</details>
+
+<hr class="sep">
+
+<!-- ============ CAPÍTULO 4 ============ -->
+<span class="chapter-num">Capítulo Quarto</span>
+<h2 class="chapter">Dores Abdominais e Órgãos</h2>
+<p class="chapter-sub">Lisa &amp; Markus</p>
+
+<h3 class="lang-flag">🇬🇧 English</h3>
+
+<p class="fala"><span class="personagem">Lisa:</span> I went to the doctor yesterday because I had abdominal pain. He said my intestines might be partially blocked.</p>
+<p class="fala"><span class="personagem">Markus:</span> That sounds uncomfortable. Did he say anything about your liver or your gallbladder?</p>
+<p class="fala"><span class="personagem">Lisa:</span> Yes, he said my liver is working fine and secreting substances regularly, but my gallbladder might be slightly irritated. Maybe it's having trouble processing fats properly.</p>
+<p class="fala"><span class="personagem">Markus:</span> And what about your bladder and your kidneys? Are they okay?</p>
+<p class="fala"><span class="personagem">Lisa:</span> My bladder's fine — I can empty it without any trouble — but one of my kidneys is working more slowly. The doctor said it could fail completely soon if I don't start paying better attention to my diet.</p>
+<p class="fala"><span class="personagem">Markus:</span> That's really serious. Did he say anything about your spleen?</p>
+<p class="fala"><span class="personagem">Lisa:</span> Yes, it seems to be fine, but he said it sometimes doesn't perform its function of storing blood perfectly. He advised me to avoid stress, because that can make the body tense up too much.</p>
+<p class="fala"><span class="personagem">Markus:</span> That makes sense. Did he find any signs of hardening or damage?</p>
+<p class="fala"><span class="personagem">Lisa:</span> Thankfully not. But he said that if I'm not careful, organs like my intestines or liver could even become fatty if the strain becomes too much.</p>
+<p class="fala"><span class="personagem">Markus:</span> That all sounds pretty serious. You really need to take care of your health, Lisa.</p>
+<p class="fala"><span class="personagem">Lisa:</span> Yes, I know. I'll take the doctor's recommendations seriously.</p>
+
+<h3 class="lang-flag">🇩🇪 Deutsch</h3>
+
+<p class="fala"><span class="personagem">Lisa:</span> Gestern war ich beim Arzt, weil ich Schmerzen im Bauch hatte. Er meinte, mein Darm könnte teilweise verstopft sein.</p>
+<p class="fala"><span class="personagem">Markus:</span> Das klingt unangenehm. Hatte er auch etwas über deine Leber oder deine Galle gesagt?</p>
+<p class="fala"><span class="personagem">Lisa:</span> Ja, er meinte, meine Leber arbeitet gut und gibt die Stoffe regelmäßig ab, aber die Galle könnte leicht gereizt sein. Vielleicht hat sie Probleme, Fette richtig zu verarbeiten.</p>
+<p class="fala"><span class="personagem">Markus:</span> Und was ist mit deiner Blase und deinen Nieren? Sind die in Ordnung?</p>
+<p class="fala"><span class="personagem">Lisa:</span> Die Blase ist okay, ich kann sie problemlos entleeren, aber eine meiner Nieren arbeitet langsamer. Der Arzt meinte, sie könnte bald komplett versagen, wenn ich nicht besser auf meine Ernährung achte.</p>
+<p class="fala"><span class="personagem">Markus:</span> Das ist wirklich ernst. Hat er auch etwas über die Milz gesagt?</p>
+<p class="fala"><span class="personagem">Lisa:</span> Ja, sie scheint in Ordnung zu sein, aber er meinte, dass sie die Aufgabe, Blut zu speichern, manchmal nicht perfekt erfüllt. Er hat mir geraten, Stress zu vermeiden, weil das den Körper zu sehr verkrampfen kann.</p>
+<p class="fala"><span class="personagem">Markus:</span> Das macht Sinn. Hat er irgendwelche Anzeichen von Verhärtung oder Schäden gefunden?</p>
+<p class="fala"><span class="personagem">Lisa:</span> Zum Glück nicht. Aber er sagte, wenn ich nicht aufpasse, könnten Organe wie der Darm oder die Leber sogar verfetten, wenn die Belastung zu groß wird.</p>
+<p class="fala"><span class="personagem">Markus:</span> Das klingt alles ziemlich ernst. Du solltest wirklich auf deine Gesundheit achten, Lisa.</p>
+<p class="fala"><span class="personagem">Lisa:</span> Ja, ich weiß. Ich werde die Empfehlungen des Arztes ernst nehmen.</p>
+
+<details class="pt-support">
+<summary>Ver tradução de apoio em Português</summary>
+<p class="fala"><span class="personagem">Lisa:</span> Ontem fui ao médico porque estava com dor de barriga. Ele disse que meu intestino pode estar parcialmente obstruído.</p>
+<p class="fala"><span class="personagem">Markus:</span> Isso parece desconfortável. Ele falou algo sobre seu fígado ou sua vesícula?</p>
+<p class="fala"><span class="personagem">Lisa:</span> Sim, ele disse que meu fígado funciona bem e libera as substâncias regularmente, mas a vesícula pode estar um pouco irritada. Talvez ela tenha dificuldade em processar bem as gorduras.</p>
+<p class="fala"><span class="personagem">Markus:</span> E quanto à sua bexiga e seus rins? Estão bem?</p>
+<p class="fala"><span class="personagem">Lisa:</span> A bexiga está ok, consigo esvaziá-la sem problemas, mas um dos rins está funcionando mais lentamente. O médico disse que ele pode falhar completamente se eu não cuidar melhor da minha alimentação.</p>
+<p class="fala"><span class="personagem">Markus:</span> Isso é realmente sério. Ele falou algo sobre o baço?</p>
+<p class="fala"><span class="personagem">Lisa:</span> Sim, parece estar bem, mas ele disse que às vezes não cumpre perfeitamente sua função de armazenar sangue. Ele me aconselhou a evitar estresse, porque isso pode contrair demais o corpo.</p>
+<p class="fala"><span class="personagem">Markus:</span> Isso faz sentido. Ele encontrou algum sinal de endurecimento ou dano?</p>
+<p class="fala"><span class="personagem">Lisa:</span> Felizmente, não. Mas ele disse que, se eu não me cuidar, órgãos como o intestino ou o fígado podem até acumular gordura, se a sobrecarga for muito grande.</p>
+<p class="fala"><span class="personagem">Markus:</span> Isso tudo parece bem sério. Você realmente precisa cuidar da sua saúde, Lisa.</p>
+<p class="fala"><span class="personagem">Lisa:</span> Sim, eu sei. Vou levar as recomendações do médico a sério.</p>
+</details>
+
+<hr class="sep">
+
+<!-- ============ VOCABULÁRIO — ALEMÃO ============ -->
+<div class="box">
+<h3>Vocabulário &amp; Expressões — Alemão</h3>
+
+<div class="vitem">
+  <span class="term">sich verrenken</span><span class="tag neutro">Neutro</span>
+  <span class="ctx">Deslocar, torcer uma articulação. Verbo reflexivo (<em>sich</em> + acusativo).</span>
+  <span class="ex">"Ich habe mir beim Sport den Knöchel verrenkt." (Torci o tornozelo fazendo esporte.)</span>
+</div>
+
+<div class="vitem">
+  <span class="term">der Rumpf</span><span class="tag formal">Formal / Técnico</span>
+  <span class="ctx">O tronco. Termo mais usado em contexto médico/anatômico; no dia a dia também se ouve <em>Oberkörper</em>.</span>
+  <span class="ex">"Der Rumpf umfasst Brust, Bauch und Rücken."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">das Zucken</span><span class="tag neutro">Neutro</span>
+  <span class="ctx">Espasmo, tremor leve e involuntário.</span>
+  <span class="ex">"Ein Zucken im Augenlid kann durch Stress ausgelöst werden."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">Bauchkrämpfe</span><span class="tag neutro">Neutro</span>
+  <span class="ctx">Cãibras abdominais.</span>
+  <span class="ex">"Sie hatte starke Bauchkrämpfe nach dem Essen."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">die Stirn runzeln</span><span class="tag informal">Coloquial / Expressivo</span>
+  <span class="ctx">Franzir a testa; expressão idiomática usada para indicar preocupação ou concentração.</span>
+  <span class="ex">"Er runzelte die Stirn, als er die Rechnung sah."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">anschlagen</span><span class="tag informal">Coloquial</span>
+  <span class="ctx">Bater, machucar-se contra algo. Verbo separável (<em>an + schlagen</em>).</span>
+  <span class="ex">"Ich habe mir den Kopf am Schrank angeschlagen."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">die Sehne</span><span class="tag formal">Técnico / Médico</span>
+  <span class="ctx">O tendão. Relacionado: <em>Sehnenentzündung</em> (tendinite).</span>
+  <span class="ex">"Die Achillessehne ist eine der stärksten Sehnen im Körper."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">abklopfen</span><span class="tag formal">Técnico / Médico</span>
+  <span class="ctx">Percutir levemente uma área para exame físico — termo típico de consultas médicas.</span>
+  <span class="ex">"Der Arzt hat meinen Rücken abgeklopft, um die Lunge zu prüfen."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">aufstoßen</span><span class="tag informal">Coloquial</span>
+  <span class="ctx">Arrotar. Verbo separável; sinônimo coloquial: <em>rülpsen</em>.</span>
+  <span class="ex">"Nach dem Essen musste er laut aufstoßen."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">keuchen</span><span class="tag neutro">Neutro</span>
+  <span class="ctx">Ofegar, respirar com dificuldade e ruído.</span>
+  <span class="ex">"Nach dem Marathon keuchte sie stark."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">aussetzen</span><span class="tag formal">Técnico</span>
+  <span class="ctx">Falhar, parar de funcionar temporariamente.</span>
+  <span class="ex">"Der Motor setzte plötzlich aus." / "Mein Gedächtnis hatte ausgesetzt."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">versagen</span><span class="tag formal">Formal / Médico</span>
+  <span class="ctx">Falhar de forma mais grave e definitiva. Mais forte que <em>aussetzen</em>.</span>
+  <span class="ex">"Die Nieren könnten versagen, wenn man sich nicht behandeln lässt."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">verfetten</span><span class="tag formal">Técnico / Médico</span>
+  <span class="ctx">Sofrer esteatose. Relacionado: <em>Fettleber</em> (fígado gorduroso).</span>
+  <span class="ex">"Die Leber kann verfetten, wenn man zu viel Zucker konsumiert."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">verkrampfen</span><span class="tag neutro">Neutro</span>
+  <span class="ctx">Tensionar-se, contrair-se involuntariamente.</span>
+  <span class="ex">"Bei Stress verkrampft sich oft der Nacken."</span>
+</div>
+</div>
+
+<div class="gram">
+<strong>📎 Nota gramatical — Plusquamperfekt:</strong> Os diálogos usam bastante <em>hatte + particípio</em> (Plusquamperfekt), indicando uma ação anterior a outra ação passada — comum em narrativas retrospectivas.
+<br><br>
+Ex.: <em>"Ich hatte versucht, meine Wirbelsäule zu strecken, aber danach fühlte es sich verrenkt an."</em>
+</div>
+
+<hr class="sep">
+
+<!-- ============ VOCABULÁRIO — INGLÊS ============ -->
+<div class="box">
+<h3>Vocabulário &amp; Expressões — Inglês</h3>
+
+<div class="vitem">
+  <span class="term">dislocated</span><span class="tag formal">Médico / Formal</span>
+  <span class="ctx">Deslocado (articulação fora do lugar).</span>
+  <span class="ex">"He dislocated his shoulder during the match."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">trunk</span><span class="tag formal">Técnico / Anatômico</span>
+  <span class="ctx">Tronco, em contexto anatômico. Coloquial: <em>torso</em>.</span>
+  <span class="ex">"The trunk supports the head, arms and legs."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">twitching</span><span class="tag neutro">Neutro</span>
+  <span class="ctx">Espasmos leves e repetitivos, geralmente involuntários.</span>
+  <span class="ex">"My eye keeps twitching when I'm tired."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">to furrow one's forehead</span><span class="tag formal">Levemente literário</span>
+  <span class="ctx">Franzir a testa. Alternativa coloquial mais comum: <em>to frown</em>.</span>
+  <span class="ex">"She furrowed her forehead in confusion."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">to bump (into something)</span><span class="tag informal">Coloquial</span>
+  <span class="ctx">Bater, esbarrar acidentalmente.</span>
+  <span class="ex">"I've got a bump on my head from the door."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">tendon</span><span class="tag formal">Médico / Técnico</span>
+  <span class="ctx">Tendão. Relacionado: <em>tendonitis</em> (tendinite).</span>
+  <span class="ex">"The Achilles tendon is one of the strongest in the body."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">to radiate (pain)</span><span class="tag formal">Médico</span>
+  <span class="ctx">Irradiar — descreve dor que se espalha de um ponto para outro.</span>
+  <span class="ex">"The pain radiates from the lower back to the leg."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">to pant</span><span class="tag neutro">Neutro</span>
+  <span class="ctx">Ofegar, respirar rápido e pesado.</span>
+  <span class="ex">"He was panting after running up the stairs."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">choppy</span><span class="tag informal">Coloquial</span>
+  <span class="ctx">Entrecortado, irregular — usado para respiração, fala ou mar agitado.</span>
+  <span class="ex">"Her breathing was choppy after the panic attack."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">to shut off</span><span class="tag informal">Coloquial</span>
+  <span class="ctx">Desligar-se, parar de funcionar de repente — figurado para cérebro/mente.</span>
+  <span class="ex">"My brain just shut off during the exam."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">gallbladder</span><span class="tag formal">Médico</span>
+  <span class="ctx">Vesícula biliar.</span>
+  <span class="ex">"Gallstones can form in the gallbladder."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">spleen</span><span class="tag formal">Médico</span>
+  <span class="ctx">Baço. Idiom antigo: <em>"to vent one's spleen"</em> = desabafar com raiva.</span>
+  <span class="ex">"The doctor checked her spleen during the exam."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">fatty (organs)</span><span class="tag formal">Médico</span>
+  <span class="ctx">Com acúmulo de gordura. Comum: <em>fatty liver disease</em>.</span>
+  <span class="ex">"Fatty liver disease is often linked to poor diet."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">to tense up</span><span class="tag neutro">Neutro</span>
+  <span class="ctx">Ficar tenso, contrair-se (físico ou emocional).</span>
+  <span class="ex">"I tend to tense up before public speaking."</span>
+</div>
+</div>
+
+<div class="gram">
+<strong>📎 Nota gramatical — Past Perfect &amp; "should have":</strong> Os diálogos usam <strong>Past Perfect</strong> (<em>had + past participle</em>) para narrar ações anteriores a outro momento passado, e <em>"should've + past participle"</em> para arrependimento/conselho tardio — ótima estrutura para praticar no speaking.
+<br><br>
+Ex.: <em>"You should've called a doctor right away."</em>
+</div>
+
+<hr class="sep">
+
+<!-- ============ EXERCÍCIOS ============ -->
+<div class="exbox">
+<h3>Exercício 1 — Complete as lacunas (Alemão)</h3>
+<ol>
+<li>Anna: „Besonders in der Nähe der Schulter und im _______."</li>
+<li>Max: „…deine _______ nicht so sehr runzeln sollen."</li>
+<li>Lena: „Es fühlte sich an, als wäre die _______ entzündet."</li>
+<li>Tom: „Hattest du versucht, die Stelle vorsichtig _______?"</li>
+<li>Julia: „…so stark _______, dass es richtig unangenehm war."</li>
+<li>Paul: „Hättest du doch besser gleich einen Arzt _______."</li>
+<li>Lisa: „…eine meiner Nieren arbeitet langsamer… sie könnte bald komplett _______."</li>
+<li>Markus: „…weil das den Körper zu sehr _______ kann."</li>
+</ol>
+</div>
+
+<div class="exbox">
+<h3>Exercício 2 — Traduza para o Inglês</h3>
+<ol>
+<li>„Ich hatte versucht, meine Wirbelsäule zu strecken, aber danach fühlte es sich irgendwie verrenkt an."</li>
+<li>„War es der Knochen, der wehgetan hat, oder eher eine Sehne?"</li>
+<li>„Mein Herzschlag war total schnell, und ich hatte richtig schwer gekeucht."</li>
+<li>„Die Blase ist okay, ich kann sie problemlos entleeren."</li>
+<li>„…könnten Organe wie der Darm oder die Leber sogar verfetten."</li>
+</ol>
+</div>
+
+<div class="exbox">
+<h3>Exercício 3 — Interpretação</h3>
+<ol>
+<li>Por que Anna sentiu dores nas costas?</li>
+<li>O que Tom sugeriu a Lena para aliviar a dor no cotovelo? Funcionou?</li>
+<li>Quais sintomas Julia descreveu além da dor de estômago?</li>
+<li>Quais órgãos o médico de Lisa examinou e qual foi o diagnóstico?</li>
+<li>Que conselho o médico deu a Lisa sobre o estresse?</li>
+</ol>
+</div>
+
+<details class="gab">
+<summary>Ver Gabarito</summary>
+<p><strong>Exercício 1:</strong> 1) Rumpf · 2) Stirn · 3) Sehne · 4) abzuklopfen · 5) aufgestoßen · 6) gerufen · 7) versagen · 8) verkrampfen</p>
+<p><strong>Exercício 2:</strong><br>
+1) "I had tried to stretch my spine, but afterward it felt kind of dislocated."<br>
+2) "Was it the bone that hurt, or more like a tendon?"<br>
+3) "My heartbeat was really fast, and I was panting hard."<br>
+4) "My bladder's fine — I can empty it without any trouble."<br>
+5) "…organs like my intestines or liver could even become fatty."</p>
+<p><strong>Exercício 3:</strong><br>
+1) Ela alongou a coluna e sentiu como se estivesse deslocada.<br>
+2) Ele sugeriu percutir levemente a área; não ajudou, nem o gelo/creme depois.<br>
+3) Vômito, arrotos fortes, coração acelerado, respiração difícil, sensação de "desligar" o cérebro.<br>
+4) Intestino (possível obstrução), fígado (bem), vesícula (irritada), bexiga (normal), rim (um deles lento, risco de falência), baço (ok, mas com falhas leves).<br>
+5) Evitar estresse, pois ele contrai/tensiona demais o corpo.</p>
+</details>
+
+<div class="ornament">❦</div>
+<p class="note">Fim do Bloco 1. Aguardando seu comando para o Bloco 2.</p>
+
+</body>
+</html>

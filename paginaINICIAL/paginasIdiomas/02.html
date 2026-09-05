@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Deutsch & English — Livro de Diálogos (Bloco 2)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=EB+Garamond:ital@0;1&display=swap');
+  body { font-family: 'EB Garamond', Georgia, serif; background: #f7f2e9; color: #2a2118; max-width: 760px; margin: 0 auto; padding: 4rem 3rem 6rem; line-height: 1.9; font-size: 1.15rem; }
+  .book-title { text-align: center; margin-bottom: 4rem; }
+  .book-title h1 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.6rem; margin: 0; }
+  .book-title .sub { font-style: italic; color: #8a7a5c; margin-top: 0.5rem; font-size: 1.1rem; }
+  .ornament { text-align: center; color: #b89b5e; font-size: 1.4rem; margin: 2rem 0; }
+  h2.chapter { font-family: 'Playfair Display', serif; text-align: center; font-size: 1.9rem; font-weight: 600; color: #4a3826; margin: 5rem 0 0.2rem; }
+  .chapter-num { display: block; text-align: center; font-family: 'Playfair Display', serif; font-style: italic; color: #b89b5e; font-size: 1.1rem; margin-bottom: 0.3rem; }
+  .chapter-sub { text-align: center; font-style: italic; color: #8a7a5c; margin-bottom: 3rem; }
+  h3.lang-flag { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #6b4423; border-bottom: 1px solid #d8c9a3; padding-bottom: 0.4rem; margin: 3.5rem 0 1.8rem; }
+  p.fala { margin: 0 0 1.4rem; text-indent: 1.5em; }
+  p.fala:first-of-type { margin-top: 0; }
+  .personagem { font-family: 'Playfair Display', serif; font-weight: 600; font-style: italic; color: #6b4423; }
+  hr.sep { border: none; text-align: center; margin: 4rem 0; }
+  hr.sep::after { content: "❖ ❖ ❖"; color: #b89b5e; letter-spacing: 0.5em; }
+  details.pt-support { background: #f0ece0; border: 1px dashed #c9b98a; border-radius: 6px; padding: 0.3rem 1.6rem; margin: 2.5rem 0 1rem; }
+  details.pt-support summary { cursor: pointer; font-family: 'Playfair Display', serif; font-weight: 600; font-style: italic; color: #7a6a4c; padding: 1rem 0; list-style: none; }
+  details.pt-support summary::-webkit-details-marker { display: none; }
+  details.pt-support summary::before { content: "🇧🇷 "; }
+  details.pt-support summary::after { content: " ▾"; color: #b89b5e; }
+  details.pt-support[open] summary::after { content: " ▴"; }
+  details.pt-support p.fala { color: #5a4e38; }
+  .box { background: #fffdf7; border: 1px solid #e3d5ac; border-radius: 4px; padding: 2rem 2.2rem; margin: 2.5rem 0; }
+  .box h3 { font-family: 'Playfair Display', serif; color: #6b4423; margin-top: 0; font-size: 1.3rem; text-align: center; margin-bottom: 1.5rem; }
+  .vitem { margin-bottom: 1.3rem; text-indent: 0; }
+  .vitem .term { font-weight: 700; color: #4a3826; font-family: 'Playfair Display', serif; }
+  .tag { display: inline-block; font-size: 0.78rem; font-weight: 600; padding: 0.1rem 0.6rem; border-radius: 10px; margin-left: 0.5rem; text-transform: uppercase; vertical-align: middle; }
+  .tag.formal { background: #dfe9f5; color: #2c4d7a; }
+  .tag.informal { background: #f5e3d0; color: #8a4f1e; }
+  .tag.neutro { background: #e4ecdc; color: #3d5c2e; }
+  .vitem .ctx { color: #5a4e38; font-size: 0.95rem; display: block; margin: 0.3rem 0; }
+  .vitem .ex { color: #7a6a4c; font-size: 0.92rem; font-style: italic; display: block; }
+  .vitem .ex::before { content: "▸ "; color: #b89b5e; }
+  .gram { background: #eef2fb; border: 1px solid #cdd9ee; border-radius: 4px; padding: 1.6rem 2rem; margin: 1.5rem 0; text-indent: 0; font-size: 0.98rem; }
+  .gram strong { color: #2c4d7a; font-family: 'Playfair Display', serif; }
+  .exbox { margin: 3rem 0; }
+  .exbox h3 { font-family: 'Playfair Display', serif; color: #4a6b42; font-size: 1.3rem; text-align: center; margin-bottom: 1.5rem; }
+  .exbox ol { padding-left: 1.5rem; }
+  .exbox li { margin-bottom: 0.8rem; }
+  details.gab { background: #fdf3e3; border: 1px solid #d8b978; border-radius: 4px; padding: 1.2rem 2rem; margin: 1.5rem 0 3rem; }
+  details.gab summary { cursor: pointer; font-family: 'Playfair Display', serif; font-weight: 600; color: #8a5a1e; }
+  details.gab p { text-indent: 0; margin: 0.8rem 0; }
+  .note { font-style: italic; font-size: 0.95rem; color: #7a6a4c; text-align: center; margin: 2rem 0 4rem; text-indent: 0; }
+</style>
+</head>
+<body>
+
+<div class="book-title">
+  <h1>Deutsch &amp; English</h1>
+  <div class="sub">Um Livro de Diálogos — Bloco 2</div>
+</div>
+
+<div class="ornament">❦</div>
+
+<!-- ============ CAPÍTULO 5 ============ -->
+<span class="chapter-num">Capítulo Quinto</span>
+<h2 class="chapter">Metabolismo e Circulação</h2>
+<p class="chapter-sub">Emma &amp; Lukas</p>
+
+<h3 class="lang-flag">🇬🇧 English</h3>
+<p class="fala"><span class="personagem">Emma:</span> I went to the doctor yesterday for a check-up. He said my digestion is slower than it should be.</p>
+<p class="fala"><span class="personagem">Lukas:</span> That can really cause problems. Did he explain if your metabolism is related to it?</p>
+<p class="fala"><span class="personagem">Emma:</span> Yes, he said my metabolism isn't working optimally. My body has trouble breaking down nutrients properly and converting them into energy.</p>
+<p class="fala"><span class="personagem">Lukas:</span> And how about your blood pressure? Did he measure it?</p>
+<p class="fala"><span class="personagem">Emma:</span> Yes, my blood pressure was a bit low because my circulation isn't pumping as well as it should. It might be due to my diet.</p>
+<p class="fala"><span class="personagem">Lukas:</span> It sounds like your whole body is affected. Do you know if it also has something to do with your gender? Sometimes processes work differently in men and women, especially when it comes to metabolism.</p>
+<p class="fala"><span class="personagem">Emma:</span> Yes, the doctor mentioned that gender plays a role. For example, my body processes carbohydrates more slowly, which also affects the speed at which blood flows.</p>
+<p class="fala"><span class="personagem">Lukas:</span> Did he say what you can do to improve these processes?</p>
+<p class="fala"><span class="personagem">Emma:</span> Yes, he advised me to exercise more to burn fat and to adjust my diet to consume less sugar. He also said I should choose foods that better match my blood and organs.</p>
+<p class="fala"><span class="personagem">Lukas:</span> That sounds like a good plan. Hopefully, your condition will improve soon.</p>
+<p class="fala"><span class="personagem">Emma:</span> Thanks, Lukas. I'll definitely try to follow the advice.</p>
+
+<h3 class="lang-flag">🇩🇪 Deutsch</h3>
+<p class="fala"><span class="personagem">Emma:</span> Ich war gestern beim Arzt für eine Untersuchung. Er hat gesagt, dass meine Verdauung langsamer ist, als sie sein sollte.</p>
+<p class="fala"><span class="personagem">Lukas:</span> Das kann wirklich Probleme machen. Hat er dir erklärt, ob dein Stoffwechsel damit zusammenhängt?</p>
+<p class="fala"><span class="personagem">Emma:</span> Ja, er meinte, mein Stoffwechsel arbeitet nicht optimal. Der Körper hat Schwierigkeiten, Nährstoffe richtig zu zersetzen und Energie zu umwandeln.</p>
+<p class="fala"><span class="personagem">Lukas:</span> Und wie sieht es mit deinem Blutdruck aus? Hat er ihn gemessen?</p>
+<p class="fala"><span class="personagem">Emma:</span> Ja, mein Blutdruck war ein bisschen niedrig, weil mein Kreislauf nicht so gut pumpt, wie er sollte. Das könnte an meiner Ernährung liegen.</p>
+<p class="fala"><span class="personagem">Lukas:</span> Das klingt, als ob dein ganzer Körper darunter leidet. Weißt du, ob das auch etwas mit deinem Geschlecht zu tun haben könnte? Manchmal funktionieren manche Prozesse bei Frauen und Männern unterschiedlich, vor allem, was den Stoffwechsel betrifft.</p>
+<p class="fala"><span class="personagem">Emma:</span> Ja, der Arzt hat erwähnt, dass das Geschlecht eine Rolle spielt. Zum Beispiel verwertet mein Körper Kohlenhydrate langsamer, was sich auch auf die Geschwindigkeit auswirkt, mit der das Blut fließt.</p>
+<p class="fala"><span class="personagem">Lukas:</span> Hat er gesagt, was du tun kannst, um die Prozesse zu verbessern?</p>
+<p class="fala"><span class="personagem">Emma:</span> Ja, er hat mir geraten, mehr Sport zu machen, um Fett zu verbrennen, und meine Ernährung so anzupassen, dass ich weniger Zucker zu mir nehme. Außerdem soll ich Lebensmittel wählen, die mein Blut und meine Organe besser verarbeiten können.</p>
+<p class="fala"><span class="personagem">Lukas:</span> Das klingt nach einem guten Plan. Hoffentlich verbessert sich dein Zustand bald.</p>
+<p class="fala"><span class="personagem">Emma:</span> Danke, Lukas. Ich werde auf jeden Fall versuchen, die Ratschläge umzusetzen.</p>
+
+<details class="pt-support">
+<summary>Ver tradução de apoio em Português</summary>
+<p class="fala"><span class="personagem">Emma:</span> Ontem fui ao médico para um check-up. Ele disse que minha digestão está mais lenta do que deveria.</p>
+<p class="fala"><span class="personagem">Lukas:</span> Isso pode causar problemas de verdade. Ele explicou se isso está relacionado ao seu metabolismo?</p>
+<p class="fala"><span class="personagem">Emma:</span> Sim, ele disse que meu metabolismo não está funcionando de forma ideal. Meu corpo tem dificuldade em decompor nutrientes corretamente e converter em energia.</p>
+<p class="fala"><span class="personagem">Lukas:</span> E sua pressão arterial? Ele mediu?</p>
+<p class="fala"><span class="personagem">Emma:</span> Sim, estava um pouco baixa porque minha circulação não está bombeando tão bem quanto deveria. Pode ser por causa da minha alimentação.</p>
+<p class="fala"><span class="personagem">Lukas:</span> Parece que o corpo todo está sofrendo com isso. Você sabe se tem algo a ver com o seu sexo? Às vezes certos processos funcionam diferente em homens e mulheres, principalmente no metabolismo.</p>
+<p class="fala"><span class="personagem">Emma:</span> Sim, o médico mencionou que o sexo tem influência. Por exemplo, meu corpo processa carboidratos mais lentamente, o que afeta também a velocidade com que o sangue circula.</p>
+<p class="fala"><span class="personagem">Lukas:</span> Ele disse o que você pode fazer para melhorar esses processos?</p>
+<p class="fala"><span class="personagem">Emma:</span> Sim, ele me aconselhou a fazer mais exercício para queimar gordura e ajustar minha dieta consumindo menos açúcar. Também disse que devo escolher alimentos que meu sangue e órgãos consigam processar melhor.</p>
+<p class="fala"><span class="personagem">Lukas:</span> Parece um bom plano. Espero que sua condição melhore em breve.</p>
+<p class="fala"><span class="personagem">Emma:</span> Obrigada, Lukas. Vou tentar seguir os conselhos com certeza.</p>
+</details>
+
+<hr class="sep">
+
+<!-- ============ CAPÍTULO 6 ============ -->
+<span class="chapter-num">Capítulo Sexto</span>
+<h2 class="chapter">Problemas no Ouvido e Visão</h2>
+<p class="chapter-sub">Sofia &amp; Max</p>
+
+<h3 class="lang-flag">🇬🇧 English</h3>
+<p class="fala"><span class="personagem">Sofia:</span> Yesterday, I felt like something was wrong with my ear. It kept buzzing, and I couldn't hear the sounds properly.</p>
+<p class="fala"><span class="personagem">Max:</span> Maybe the gland in your ear was enlarged. That happens sometimes with infections. Have you had your ear examined?</p>
+<p class="fala"><span class="personagem">Sofia:</span> Not yet, but I'll go to the doctor. It felt like all the sounds were echoing in my head, and I couldn't filter them.</p>
+<p class="fala"><span class="personagem">Max:</span> That sounds unpleasant. And how were your sensory organs in general? Did it affect your eyes?</p>
+<p class="fala"><span class="personagem">Sofia:</span> Yes, when the buzzing got worse, my eyes started to blur, especially when I tried to focus on something.</p>
+<p class="fala"><span class="personagem">Max:</span> That sounds really serious. Did you try closing your eyes and resting? Or maybe you rubbed them too hard without realizing it?</p>
+<p class="fala"><span class="personagem">Sofia:</span> I rubbed them a lot because they were tired, but that only made it worse. I think I should leave everything open for a moment and take a deep breath.</p>
+<p class="fala"><span class="personagem">Max:</span> Definitely. You should get that checked by a doctor. Maybe it's all connected to your ear, and once that's better, your eyes will feel better too.</p>
+<p class="fala"><span class="personagem">Sofia:</span> Yes, you're right. Thanks for listening to me.</p>
+
+<h3 class="lang-flag">🇩🇪 Deutsch</h3>
+<p class="fala"><span class="personagem">Sofia:</span> Gestern hatte ich das Gefühl, dass etwas mit meinem Ohr nicht stimmt. Es hat ständig gesummert, und ich konnte die Töne nicht richtig hören.</p>
+<p class="fala"><span class="personagem">Max:</span> Vielleicht war deine Drüse im Ohr vergrößert. Das passiert manchmal bei Entzündungen. Hast du dein Ohr untersuchen lassen?</p>
+<p class="fala"><span class="personagem">Sofia:</span> Noch nicht, aber ich werde zum Arzt gehen. Es fühlte sich an, als ob alle Geräusche in meinem Kopf tönten und ich sie nicht filtern konnte.</p>
+<p class="fala"><span class="personagem">Max:</span> Das klingt unangenehm. Und wie ging es deinen Sinnesorganen allgemein? Hat sich das auf deine Augen ausgewirkt?</p>
+<p class="fala"><span class="personagem">Sofia:</span> Ja, als das Summen schlimmer wurde, begannen meine Augen zu verschwimmen, besonders wenn ich versucht habe, auf etwas zu blicken.</p>
+<p class="fala"><span class="personagem">Max:</span> Das klingt wirklich ernst. Hast du versucht, die Augen zu schließen und dich auszuruhen? Oder hast du sie vielleicht unbewusst zu stark gerieben?</p>
+<p class="fala"><span class="personagem">Sofia:</span> Ich habe sie oft gerieben, weil sie müde waren, aber das hat es nur schlimmer gemacht. Ich denke, ich sollte alles einen Moment offen lassen und tief durchatmen.</p>
+<p class="fala"><span class="personagem">Max:</span> Auf jeden Fall. Lass das lieber von einem Arzt prüfen. Vielleicht hängt alles mit deinem Ohr zusammen, und wenn das wieder in Ordnung ist, fühlen sich auch deine Augen besser an.</p>
+<p class="fala"><span class="personagem">Sofia:</span> Ja, du hast recht. Danke, dass du mir zuhörst.</p>
+
+<details class="pt-support">
+<summary>Ver tradução de apoio em Português</summary>
+<p class="fala"><span class="personagem">Sofia:</span> Ontem senti que algo estava errado com meu ouvido. Ficava zumbindo, e eu não conseguia ouvir os sons direito.</p>
+<p class="fala"><span class="personagem">Max:</span> Talvez sua glândula no ouvido estivesse aumentada. Isso acontece às vezes com inflamações. Você já examinou o ouvido?</p>
+<p class="fala"><span class="personagem">Sofia:</span> Ainda não, mas vou ao médico. Parecia que todos os sons ecoavam na minha cabeça e eu não conseguia filtrá-los.</p>
+<p class="fala"><span class="personagem">Max:</span> Isso parece desagradável. E como estavam seus órgãos sensoriais em geral? Afetou seus olhos?</p>
+<p class="fala"><span class="personagem">Sofia:</span> Sim, quando o zumbido piorou, minha visão começou a embaçar, principalmente quando eu tentava focar em algo.</p>
+<p class="fala"><span class="personagem">Max:</span> Isso parece realmente sério. Você tentou fechar os olhos e descansar? Ou talvez tenha esfregado com muita força sem perceber?</p>
+<p class="fala"><span class="personagem">Sofia:</span> Esfreguei bastante porque estavam cansados, mas isso só piorou. Acho que deveria deixar tudo em repouso por um momento e respirar profundamente.</p>
+<p class="fala"><span class="personagem">Max:</span> Com certeza. É melhor deixar um médico examinar isso. Talvez tudo esteja ligado ao seu ouvido, e quando isso melhorar, seus olhos também vão se sentir melhor.</p>
+<p class="fala"><span class="personagem">Sofia:</span> Sim, você tem razão. Obrigada por me escutar.</p>
+</details>
+
+<hr class="sep">
+
+<!-- ============ CAPÍTULO 7 ============ -->
+<span class="chapter-num">Capítulo Sétimo</span>
+<h2 class="chapter">Estômago Inchado e Postura</h2>
+<p class="chapter-sub">Sarah &amp; Mike</p>
+
+<h3 class="lang-flag">🇬🇧 English</h3>
+<p class="fala"><span class="personagem">Sarah:</span> Ugh, my stomach feels so bloated today. I can barely bend down without discomfort.</p>
+<p class="fala"><span class="personagem">Mike:</span> That doesn't sound good. Have you tried to stretch your body a bit to see if it helps? Maybe your spine just needs some movement.</p>
+<p class="fala"><span class="personagem">Sarah:</span> I did, but it didn't make much of a difference. I even tried to inflate my lungs with deep breaths to relax, but the pressure in my trunk is still there.</p>
+<p class="fala"><span class="personagem">Mike:</span> Hmm, maybe you need to take it easy for a while. Did you feel anything unusual, like a twitch or strain when it started?</p>
+<p class="fala"><span class="personagem">Sarah:</span> No, but I think I might have overdone it at the gym yesterday. I lifted some heavy weights, and my trainer said I should watch my form, especially with my buttocks and core.</p>
+<p class="fala"><span class="personagem">Mike:</span> That could explain it. Maybe you accidentally dislocated something or put too much strain on your back. How about your forehead? You're not twitching or making faces from the pain, are you?</p>
+<p class="fala"><span class="personagem">Sarah</span> <span class="stage">(laughs):</span> No, my forehead is fine, thank you very much! But now that you mention it, I do shrug my shoulders a lot when I'm stressed.</p>
+<p class="fala"><span class="personagem">Mike:</span> That might not help either. Try to lower your shoulders and relax. And maybe do some light movements to lift your spirits. If it doesn't improve, you should see a doctor.</p>
+<p class="fala"><span class="personagem">Sarah:</span> You're right. Thanks, Mike. I'll try to rest and take it easy today.</p>
+
+<h3 class="lang-flag">🇩🇪 Deutsch</h3>
+<p class="fala"><span class="personagem">Sarah:</span> Ugh, mein Magen fühlt sich heute so aufgebläht an. Ich kann mich kaum bücken, ohne dass es unangenehm wird.</p>
+<p class="fala"><span class="personagem">Mike:</span> Das klingt nicht gut. Hast du versucht, deinen Körper etwas zu strecken, um zu sehen, ob es hilft? Vielleicht braucht deine Wirbelsäule nur ein bisschen Bewegung.</p>
+<p class="fala"><span class="personagem">Sarah:</span> Ich habe es versucht, aber es hat kaum einen Unterschied gemacht. Ich habe sogar versucht, meine Lunge mit tiefen Atemzügen zu füllen, um mich zu entspannen, aber der Druck im Rumpf ist immer noch da.</p>
+<p class="fala"><span class="personagem">Mike:</span> Hm, vielleicht musst du dich eine Weile schonen. Hast du etwas Ungewöhnliches gefühlt, wie ein Zucken oder eine Zerrung, als es angefangen hat?</p>
+<p class="fala"><span class="personagem">Sarah:</span> Nein, aber ich glaube, ich habe es gestern im Fitnessstudio übertrieben. Ich habe schwere Gewichte gehoben, und mein Trainer sagte, ich sollte auf meine Haltung achten, besonders bei den Pobacken und der Körpermitte.</p>
+<p class="fala"><span class="personagem">Mike:</span> Das könnte es erklären. Vielleicht hast du dir aus Versehen etwas verrenkt oder deinen Rücken zu stark belastet. Und deine Stirn? Du zuckst doch nicht oder verziehst das Gesicht vor Schmerzen, oder?</p>
+<p class="fala"><span class="personagem">Sarah</span> <span class="stage">(lachend):</span> Nein, meine Stirn ist völlig in Ordnung, danke schön! Aber jetzt, wo du es erwähnst, zucke ich tatsächlich oft mit den Schultern, wenn ich gestresst bin.</p>
+<p class="fala"><span class="personagem">Mike:</span> Das hilft wahrscheinlich auch nicht. Versuch, die Schultern zu senken und dich zu entspannen. Und vielleicht ein paar leichte Bewegungen, um deine Stimmung zu heben. Wenn es nicht besser wird, solltest du zum Arzt gehen.</p>
+<p class="fala"><span class="personagem">Sarah:</span> Du hast recht. Danke, Mike. Ich werde versuchen, mich heute auszuruhen und es ruhig anzugehen.</p>
+
+<details class="pt-support">
+<summary>Ver tradução de apoio em Português</summary>
+<p class="fala"><span class="personagem">Sarah:</span> Ugh, meu estômago está tão inchado hoje. Quase não consigo me abaixar sem sentir desconforto.</p>
+<p class="fala"><span class="personagem">Mike:</span> Isso não parece bom. Você tentou alongar o corpo um pouco para ver se ajuda? Talvez sua coluna só precise de movimento.</p>
+<p class="fala"><span class="personagem">Sarah:</span> Tentei, mas não fez muita diferença. Até tentei encher os pulmões com respirações profundas para relaxar, mas a pressão no tronco continua.</p>
+<p class="fala"><span class="personagem">Mike:</span> Hmm, talvez você precise descansar por um tempo. Sentiu algo estranho, como um tremor ou uma distensão quando começou?</p>
+<p class="fala"><span class="personagem">Sarah:</span> Não, mas acho que exagerei na academia ontem. Levantei pesos pesados, e meu treinador disse que eu deveria cuidar da postura, especialmente com o glúteo e o core.</p>
+<p class="fala"><span class="personagem">Mike:</span> Isso poderia explicar. Talvez você tenha deslocado algo acidentalmente ou sobrecarregado as costas. E sua testa? Você não está tremendo ou fazendo caretas de dor, está?</p>
+<p class="fala"><span class="personagem">Sarah</span> <span class="stage">(rindo):</span> Não, minha testa está perfeitamente bem, muito obrigada! Mas agora que você mencionou, eu realmente encolho os ombros bastante quando estou estressada.</p>
+<p class="fala"><span class="personagem">Mike:</span> Isso também não deve ajudar. Tente abaixar os ombros e relaxar. E talvez faça alguns movimentos leves para melhorar seu ânimo. Se não melhorar, você deveria ir ao médico.</p>
+<p class="fala"><span class="personagem">Sarah:</span> Você tem razão. Obrigada, Mike. Vou tentar descansar e ir com calma hoje.</p>
+</details>
+
+<hr class="sep">
+
+<!-- ============ VOCABULÁRIO — ALEMÃO ============ -->
+<div class="box">
+<h3>Vocabulário &amp; Expressões — Alemão</h3>
+
+<div class="vitem">
+  <span class="term">der Stoffwechsel</span><span class="tag formal">Médico / Técnico</span>
+  <span class="ctx">Metabolismo. Palavra composta: <em>Stoff</em> (substância) + <em>Wechsel</em> (troca).</span>
+  <span class="ex">"Ein schneller Stoffwechsel hilft beim Abnehmen."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">zersetzen</span><span class="tag formal">Técnico</span>
+  <span class="ctx">Decompor, degradar quimicamente.</span>
+  <span class="ex">"Bakterien zersetzen organisches Material."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">der Kreislauf</span><span class="tag formal">Médico</span>
+  <span class="ctx">Circulação sanguínea / sistema circulatório.</span>
+  <span class="ex">"Der Kreislauf transportiert Sauerstoff durch den Körper."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">die Drüse</span><span class="tag formal">Médico</span>
+  <span class="ctx">Glândula.</span>
+  <span class="ex">"Die Schilddrüse reguliert den Stoffwechsel."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">verschwimmen</span><span class="tag neutro">Neutro</span>
+  <span class="ctx">Embaçar, ficar turvo (visão).</span>
+  <span class="ex">"Nach dem langen Lesen verschwimmen mir die Buchstaben."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">sich aufgebläht fühlen</span><span class="tag informal">Coloquial</span>
+  <span class="ctx">Sentir-se inchado/estufado.</span>
+  <span class="ex">"Nach dem Essen fühle ich mich oft aufgebläht."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">die Zerrung</span><span class="tag formal">Médico</span>
+  <span class="ctx">Distensão muscular.</span>
+  <span class="ex">"Er hat sich beim Training eine Zerrung zugezogen."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">mit den Schultern zucken</span><span class="tag informal">Coloquial / Idiomático</span>
+  <span class="ctx">Dar de ombros — expressão fixa muito usada.</span>
+  <span class="ex">"Sie zuckte nur mit den Schultern und sagte nichts."</span>
+</div>
+</div>
+
+<div class="gram">
+<strong>📎 Nota gramatical — Verbos compostos com "ver-":</strong> O prefixo <em>ver-</em> costuma indicar mudança de estado ou intensificação: <em>verschwimmen</em> (ficar turvo), <em>verrenken</em> (deslocar), <em>verkrampfen</em> (contrair). Preste atenção a esse padrão — ele aparece com frequência em contextos médicos e emocionais.
+</div>
+
+<hr class="sep">
+
+<!-- ============ VOCABULÁRIO — INGLÊS ============ -->
+<div class="box">
+<h3>Vocabulário &amp; Expressões — Inglês</h3>
+
+<div class="vitem">
+  <span class="term">metabolism</span><span class="tag formal">Médico</span>
+  <span class="ctx">Metabolismo. Adjetivo: <em>metabolic</em>.</span>
+  <span class="ex">"A slow metabolism can make it harder to lose weight."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">to break down (nutrients)</span><span class="tag neutro">Neutro</span>
+  <span class="ctx">Decompor, quebrar em partes menores. Verbo separável.</span>
+  <span class="ex">"Enzymes help break down food in the stomach."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">circulation</span><span class="tag formal">Médico</span>
+  <span class="ctx">Circulação sanguínea.</span>
+  <span class="ex">"Poor circulation can cause cold hands and feet."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">gland</span><span class="tag formal">Médico</span>
+  <span class="ctx">Glândula.</span>
+  <span class="ex">"The thyroid gland regulates hormones."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">to blur</span><span class="tag neutro">Neutro</span>
+  <span class="ctx">Embaçar, ficar turvo.</span>
+  <span class="ex">"My vision blurred after staring at the screen too long."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">bloated</span><span class="tag informal">Coloquial</span>
+  <span class="ctx">Inchado, estufado (geralmente estômago).</span>
+  <span class="ex">"I feel so bloated after that meal."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">to shrug (one's shoulders)</span><span class="tag informal">Coloquial / Idiomático</span>
+  <span class="ctx">Dar de ombros — gesto de indiferença ou tensão.</span>
+  <span class="ex">"She just shrugged and walked away."</span>
+</div>
+
+<div class="vitem">
+  <span class="term">to lift one's spirits</span><span class="tag formal">Expressão idiomática</span>
+  <span class="ctx">Melhorar o humor/ânimo.</span>
+  <span class="ex">"A short walk can really lift your spirits."</span>
+</div>
+</div>
+
+<div class="gram">
+<strong>📎 Nota gramatical — "should have" vs. "should":</strong> Compare o uso de conselho no presente (<em>"you should see a doctor"</em>) com o arrependimento no passado (<em>"you should've called a doctor"</em>, do Bloco 1). Essa diferença é essencial para expressar conselhos tardios.
+</div>
+
+<hr class="sep">
+
+<!-- ============ EXERCÍCIOS ============ -->
+<div class="exbox">
+<h3>Exercício 1 — Complete as lacunas (Alemão)</h3>
+<ol>
+<li>Emma: „Mein _______ arbeitet nicht optimal."</li>
+<li>Lukas: „…weil mein _______ nicht so gut pumpt."</li>
+<li>Sofia: „Vielleicht war deine _______ im Ohr vergrößert."</li>
+<li>Max: „…begannen meine Augen zu _______."</li>
+<li>Sarah: „Mein Magen fühlt sich heute so _______ an."</li>
+<li>Mike: „…wenn du gestresst bist, zuckst du mit den _______."</li>
+</ol>
+</div>
+
+<div class="exbox">
+<h3>Exercício 2 — Traduza para o Inglês</h3>
+<ol>
+<li>„Der Körper hat Schwierigkeiten, Nährstoffe richtig zu zersetzen."</li>
+<li>„Es fühlte sich an, als ob alle Geräusche in meinem Kopf tönten."</li>
+<li>„Ich habe sogar versucht, meine Lunge mit tiefen Atemzügen zu füllen."</li>
+</ol>
+</div>
+
+<div class="exbox">
+<h3>Exercício 3 — Interpretação</h3>
+<ol>
+<li>Que fatores o médico apontou como causa da lentidão do metabolismo de Emma?</li>
+<li>O que Sofia sentiu além do zumbido no ouvido?</li>
+<li>O que Mike sugere como possível causa do inchaço de Sarah?</li>
+</ol>
+</div>
+
+<details class="gab">
+<summary>Ver Gabarito</summary>
+<p><strong>Exercício 1:</strong> 1) Stoffwechsel · 2) Kreislauf · 3) Drüse · 4) verschwimmen · 5) aufgebläht · 6) Schultern</p>
+<p><strong>Exercício 2:</strong><br>
+1) "The body has trouble breaking down nutrients properly."<br>
+2) "It felt like all the sounds were echoing in my head."<br>
+3) "I even tried to inflate my lungs with deep breaths."</p>
+<p><strong>Exercício 3:</strong><br>
+1) Digestão lenta, metabolismo abaixo do ideal, pressão baixa por má circulação, e influência do sexo biológico no processamento de carboidratos.<br>
+2) Visão embaçada, especialmente ao tentar focar em algo.<br>
+3) Excesso de exercício na academia (levantamento de peso pesado) e má postura, possivelmente causando distensão nas costas.</p>
+</details>
+
+<div class="ornament">❦</div>
+<p class="note">Fim do Bloco 2. Aguardando seu comando para o Bloco 3 (Roupas — Anna, Lisa, Max, Julia, Sophie e Paul).</p>
+
+</body>
+</html>

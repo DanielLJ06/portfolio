@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;  
+    font-family: Poppins, "Helvetica Neue", sans-serif; 
+    
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+  --bg: #0c1018;
+  --surface: #1e293b;
+  --border: #334155;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-hover: #0ea5e9;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    background-image: radial-gradient(#2a2a2a 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+.navegacao{
+    position: fixed;
+    top: 0;
+    background: rgba(23, 37, 70, 0.8);
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5em;
+
+}   
+
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    justify-content: center;
+}
+
+
+.menulink {
+    text-decoration: none;
+    color: var(--text);
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menulink::after {
+    content: '';
+    height: 2px;
+    width: 0;                 /* começa invisível */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+    transition: width 0.4s ease;
+}
+
+.menulink:hover::after {
+    width: 100%;
+}
+
+
+.cabecalho > div {
+    text-align: center;
+}
+
+.fotoImagem {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+    box-shadow: 0 0 20px rgba(99, 141, 240, 0.3);
+    animation: flutuar 5s ease-in-out infinite;
+}
+
+.cabecalho{
+    min-height: 67vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    h1{
+        font-size: 3.5rem;
+        color: var(--accent);
+        font-weight: bold;
+        margin: 20px;
+    }
+
+.cabecalho-texto{
+    font-size: 2em;
+    color: var(--text);
+}
+
+.sobre{
+    padding: 3.5rem 2rem;
+}
+
+.sobre-titulo{
+    font-size: 3rem;
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-caixa{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--accent-hover);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05)  ;
+}
+
+.sobre-paragrafo{
+    text-align: center;
+    font-size: 1.3rem;
+   
+}
+
+
+
+.fotoprojeto{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.projetos-titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+
+}
+
+.projeto-caixa{
+    display: grid;  
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    
+}
+
+.projeto-card{
+    background: rgba(255, 255, 255, 0.05)  ;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--accent);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.projeto-card:hover{
+    box-shadow: 0 10px 20px rgba(167, 234, 255, 0.993) ;
+    transform: translateY(-10px) scale(1.05);
+}
+.paragrafo-projetos{
+    color: antiquewhite;
+    line-height: 1.25rem;
+}
+
+.textotexto{
+    padding: 1.5rem;
+}
+
+.info-projeto-titulo{
+    margin-bottom: 5px;
+}
+
+.contados{
+    padding: 4.5rem 2rem;
+    text-align: center  ;
+    gap: 60px;
+}
+
+.contados-titulo{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    gap:60px;  
+}
+
+.imagens-card{
+   display: grid;  
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.rede_social{
+    transition: all 0.4s ease;
+}
+
+.rede_social img{
+    width: 320px;
+    height: 320px;
+}
+.rede_social:hover{
+    transform: translateY(-10px) scale(1.05);
+}
+
+@keyframes  flutuar{
+    0%,100%{
+        transform: translateY(0);
+    }
+
+     50%{
+        transform: translateY(-15px);
+    }
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 14, 22, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 1.5rem;
+}
+
+.modal.ativo {
+    display: flex;
+    animation: modalFade 0.25s ease;
+}
+
+.modal-conteudo {
+    background: #161b26;
+    border: 1px solid rgba(99, 141, 240, 0.35);
+    border-radius: 18px;
+    padding: 2rem;
+    max-width: 620px;
+    width: 100%;
+    max-height: 88vh;
+    overflow-y: auto;
+    position: relative;
+    animation: modalSobe 0.3s ease;
+}
+
+.modal-img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1.25rem;
+}
+
+.modal-titulo {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 0 0 0.75rem;
+}
+
+.modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background: rgba(99, 141, 240, 0.15);
+    color: #8fb0ff;
+    border: 1px solid rgba(99, 141, 240, 0.35);
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+}
+
+.modal-texto {
+    color: #b8c0d0;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.modal-link {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    background: #638df0;
+    color: #0c1018;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.modal-link:hover {
+    background: #7fa2f5;
+}
+
+.modal-fechar {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.modal-video {
+    display: block;
+    width: 100%;
+    max-height: 60vh;
+    border-radius: 12px;
+    background: #000;
+    margin-bottom: 16px;
+    object-fit: contain;
+}
+
+.modal-video[hidden] {
+    display: none;
+}
+
+.modal-img[hidden] {
+    display: none;
+}
+
+@keyframes modalFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes modalSobe {
+    from { opacity: 0; transform: translateY(25px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (max-width: 600px) {
+    .modal-conteudo { padding: 1.25rem; }
+    .modal-img { height: 190px; }
+}

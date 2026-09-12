@@ -25,12 +25,11 @@ document.querySelectorAll('.projeto-card').forEach(card => {
         mTexto.textContent  = card.dataset.texto;
 
         mTags.innerHTML = (card.dataset.tags || '')
-            .split(',')
-            .filter(t => t.trim())
-            .map(t => `<span class="tag">${t.trim()}</span>`)
-            .join('');
+            .split(',').filter(t => t.trim())
+            .map(t => `<span class="tag">${t.trim()}</span>`).join('');
 
         const link = card.dataset.link;
+        mLink.textContent = card.dataset.acao || 'Ver mais';
         mLink.style.display = (link && link !== '#') ? 'inline-block' : 'none';
         if (link) mLink.href = link;
 
@@ -43,7 +42,6 @@ function fecharModal() {
     modal.classList.remove('ativo');
     document.body.style.overflow = '';
 }
-
 document.getElementById('modalFechar').addEventListener('click', fecharModal);
 modal.addEventListener('click', e => { if (e.target === modal) fecharModal(); });
 document.addEventListener('keydown', e => {

@@ -1,157 +1,251 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Canal</title>
-    <link rel="stylesheet" href="index2.css">
-    <script src="index2.js" defer></script>
-    <link rel="icon" type="image/png" href="../imagens/canalredondo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfólio de Daniel: canal de animação Blue Orange Studio, projeto autodidata de idiomas e hobbys.">
+<title>Coleção de criações</title>
+<link rel="stylesheet" href="index.css">
+<script src="index.js" defer></script>
+<link rel="icon" type="image/png" href="../imagens/canalredondo.png">
 </head>
 <body>
-    <nav class="navegacao">
-        <ul class="menu">   
-            <li><a href="#inicio" class="menulink">Início</a></li>  
-            <li><a href="#projetos" class="menulink">Videos</a></li>
-        </ul>
-    </nav>
+<nav class="navegacao">
+    <ul class="menu">
+        <li><a href="#inicio" class="menulink">Início</a></li>
+        <li><a href="#canal" class="menulink">Canal</a></li>
+        <li><a href="#videos" class="menulink">Vídeos</a></li>
+        <li><a href="#idiomas" class="menulink">Idiomas</a></li>
+        <li><a href="#textos" class="menulink">Textos</a></li>
+        <li><a href="#hobbys" class="menulink">Hobbys</a></li>
+        <li><a href="#ferramentas" class="menulink">Ferramentas</a></li>
+    </ul>
+</nav>
 
-    <main id="inicio" class="cabecalho">
-        <div>
-            <img src="../imagens/ed4826ab-0fe2-4b96-bd07-c73887debea1.png" class="fotoImagem" alt="Foto de Daniel">
-            <h1 class="cabecalho-subtitulo">Blue Orange Studio</h1>
-            <p class="cabecalho-texto">Canal de animação </p>
+<main id="inicio" class="cabecalho">
+    <div>
+        <h1 class="cabecalho-titulo">Coleção de criações</h1>
+        <p class="cabecalho-texto">Animação · Idiomas · Hobbys</p>
+    </div>
+</main>
+
+<section id="canal" class="sobre">
+    <div class="secao-hero">
+        <img src="../imagens/ed4826ab-0fe2-4b96-bd07-c73887debea1.png" class="fotoImagem" alt="Blue Orange Studio">
+        <h2 class="secao-titulo">Blue Orange Studio</h2>
+        <p class="secao-legenda">Canal de animação</p>
+    </div>
+    <div class="sobre-caixa">
+        <p class="sobre-paragrafo">Criei este canal em 2025 para fazer o que eu mais gosto: criar. O conteúdo é baseado em animações feitas inteiramente por mim — dos desenhos à edição — e voltado para o público internacional, sendo majoritariamente em inglês. Todo o processo de animação e edição eu aprendi por conta própria, na base da tentativa e erro e de tutoriais no YouTube. Não foi utilizada nenhuma IA para as animações.</p>
+    </div>
+</section>
+
+<section id="videos" class="projetos">
+    <h2 class="projetos-titulo">Meus Vídeos</h2>
+    <div class="projeto-caixa">
+        <div class="projeto-card"
+             data-titulo="Sonic and Shadow team up but it's an anime"
+             data-img="../imagens/sonic123.png"
+             data-img2="../imagens/sonicstory.gif"
+             data-tags="Animação 2D, Sonic"
+             data-texto="Neste vídeo, criei uma animação de fã baseada no filme Sonic 3. Juntei os personagens Sonic e Shadow em uma cena de aliança, mas reimaginando toda a ação com uma pegada e estilo de anime."
+             data-acao="Ver vídeo"
+             data-link="https://www.youtube.com/watch?v=624tQIGuqiY">
+            <img src="../imagens/Snapshot_20260904170827.png" alt="Primeiro vídeo" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Primeiro vídeo</h3></div>
         </div>
-    </main>
 
-    <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">Sobre o canal</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Criei este canal em 2025 para fazer o que eu mais gosto: criar. O conteúdo é baseado em animações feitas inteiramente por mim — dos desenhos à edição — e voltado para o público internacional, sendo majoritariamente em inglês. Todo o processo de animação e edição eu aprendi por conta própria, na base da tentativa e erro e de tutoriais no YouTube. Não foi utilizada nenhuma IA para as animações.</p>
+        <div class="projeto-card"
+             data-titulo="[Sonic] Too Far | Comic to Animation"
+             data-img="../imagens/sonic456.png"
+             data-img2="../imagens/sonicstory2.gif"
+             data-tags="Animação 2D, Comic"
+             data-texto="Adaptei uma fan-comic encontrada na internet. A história traz um momento de muita tensão onde o Sonic finalmente perde a paciência com as armadilhas do Dr. Eggman."
+             data-acao="Ver vídeo"
+             data-link="https://www.youtube.com/watch?v=zf6jXszdDmM">
+            <img src="../imagens/Snapshot.PNG" alt="Segundo vídeo" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Segundo vídeo</h3></div>
         </div>
-    </section>
 
-    <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">Meus Videos</h2>
-        <div class="projeto-caixa">
-
-            <div class="projeto-card"
-                 data-titulo="Sonic and Shadow team up but it's an anime"
-                 data-img="../imagens/sonic123.png"
-                 data-texto="Neste vídeo, criei uma animação de fã baseada no filme Sonic 3. Juntei os personagens Sonic e Shadow em uma cena de aliança, mas reimaginando toda a ação com uma pegada e estilo de anime. É uma produção original feita por mim, homenageando o universo da Sega.""
-                 data-img2="../imagens/sonicstory.gif"
-                 data-link="https://www.youtube.com/watch?v=624tQIGuqiY">
-                <img src="../imagens/Snapshot_20260904170827.png" alt="Projeto 1" class="fotoprojeto">
-                <div class="textotexto">
-                    <h3 class="info-projeto-titulo">Primeiro video</h3>
-
-                </div>
-            </div>
-
-           
-
-              <div class="projeto-card"
-                 data-titulo="[Sonic] Too Far | Comic to Animation"
-                 data-img="../imagens/sonic456.png"
-                 data-texto="Neste vídeo de animação 2D, usei os personagens do universo Sonic, da Sega, para adaptar uma fan-comic encontrada na internet. A história traz um momento de muita tensão onde o Sonic finalmente perde a paciência com as armadilhas do Dr. Eggman.."
-                 data-img2="../imagens/sonicstory2.gif"
-                 data-link="https://www.youtube.com/watch?v=zf6jXszdDmM">
-                <img src="../imagens/Snapshot.PNG" alt="Projeto 1" class="fotoprojeto">
-                <div class="textotexto">
-                    <h3 class="info-projeto-titulo">Segundo video</h3>
-                </div>
-            </div>
-
-
-    
-
-
-               <div class="projeto-card"
-                 data-titulo="[Super Smash Bros] Behind the Scenes | Comic to Animation"
-                 data-img="../imagens/sonic789.png"
-                 data-texto="Meu vídeo de animação focado no universo de Super Smash Bros. Adaptei uma fan-comic da internet para mostrar de forma divertida os bastidores e a convivência dos lutadores da Nintendo quando estão fora das arenas."
-                 data-img2="../imagens/sonicstory3.gif"
-                 data-link="https://www.youtube.com/watch?v=QzlK-K90BSc">
-                <img src="../imagens/Snapshot_22.PNG" alt="Projeto 1" class="fotoprojeto">
-                <div class="textotexto">
-                    <h3 class="info-projeto-titulo">Terceiro Video</h3>
-                </div>
-            </div>
-
-
-
-               <div class="projeto-card"
-                 data-titulo="[TADC] Thanks for playing | Comic to Animation"
-                 data-img="../imagens/sonic1011.png"
-                 data-texto="Um vídeo de animação focado em The Amazing Digital Circus. Adaptei uma fan-comic da internet mostrando uma cena de despedida emocionante entre os personagens."
-                 data-img2="../imagens/sonicstory4.gif"
-                 data-link="https://www.youtube.com/watch?v=cIL2kvXT5qs">
-                <img src="../imagens/Snapshot_33.png" alt="Projeto 1" class="fotoprojeto">
-                <div class="textotexto">
-                    <h3 class="info-projeto-titulo">Quarto video</h3>
-                </div>
-            </div>
-
-
-
-               <div class="projeto-card"
-                 data-titulo="[TADC] That's my GAME! | Comic to Animation"
-                 data-img="../imagens/sonic1213.png"
-                 data-texto="Nesta animação,trouxe novamente os personagens da websérie The Amazing Digital Circus. É uma adaptação animada de uma fan-comic que explora um lado mais frustrado do Caine ao achar que ninguém está se divertindo com o jogo dele."
-                 data-img2="../imagens/sonicstory5.gif"
-                 data-link="https://www.youtube.com/watch?v=SL_FXXoHH9g">
-                <img src="../imagens/Snapshot_70.PNG" alt="Projeto 1" class="fotoprojeto">
-                <div class="textotexto">
-                    <h3 class="info-projeto-titulo">Quinto video</h3>
-                </div>
-            </div>
-
-
-              <div class="projeto-card"
-                 data-titulo="[Izoucha] More than enough | Comic to Animation"
-                 data-img="../imagens/sonic1415.png"
-                 data-texto="Meu vídeo de animação focado no universo do anime My Hero Academia, utilizando os personagens Izuku Midoriya e Ochaco. Adaptei uma fan-comic emocionante que foca em um momento de vulnerabilidade, onde o Deku sente que não está fazendo o suficiente."
-                 data-img2="../imagens/sonicstory6.gif"
-                 data-link="https://www.youtube.com/watch?v=oSbW2I84Gqk">
-                <img src="../imagens/Snapshot_100.PNG" alt="Projeto 1" class="fotoprojeto">
-                <div class="textotexto">
-                    <h3 class="info-projeto-titulo">Sexto video</h3>
-                </div>
-            </div>
-
-
+        <div class="projeto-card"
+             data-titulo="[Super Smash Bros] Behind the Scenes"
+             data-img="../imagens/sonic789.png"
+             data-img2="../imagens/sonicstory3.gif"
+             data-tags="Animação 2D, Nintendo"
+             data-texto="Adaptei uma fan-comic da internet para mostrar de forma divertida os bastidores e a convivência dos lutadores da Nintendo quando estão fora das arenas."
+             data-acao="Ver vídeo"
+             data-link="https://www.youtube.com/watch?v=QzlK-K90BSc">
+            <img src="../imagens/Snapshot_22.PNG" alt="Terceiro vídeo" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Terceiro vídeo</h3></div>
         </div>
-    </section>
 
-    <section id="contatos" class="contados">
-        <h2 class="contados-titulo">Softwares utilizados</h2>
-        <div class="imagens-card">
-            <div class="rede_social">
-                <a href="https://filmora.wondershare.net/pt-br/ad/filmora-editor-de-video-brand-price.html?gad_source=1&gad_campaignid=22428478315&gclid=Cj0KCQjw2OnUBhC2ARIsACKyfaEGna-Z7Jcvyo5DAPcUT_bW83OUmt7j-UWmNVjeyuB_j4s5hoko7XoaAgk6EALw_wcB" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagens/images.png" alt="Instagram">
-                </a>
-            </div>
-            <div class="rede_social">
-                <a href="https://pivotanimator.net" target="_blank" rel="noopener noreferrer">
-                    <img src="../imagens/pivot-animator.jpg" alt="GitHub">
-                </a>
-            </div>
+        <div class="projeto-card"
+             data-titulo="[TADC] Thanks for playing"
+             data-img="../imagens/sonic1011.png"
+             data-img2="../imagens/sonicstory4.gif"
+             data-tags="Animação 2D, TADC"
+             data-texto="Adaptei uma fan-comic da internet mostrando uma cena de despedida emocionante entre os personagens."
+             data-acao="Ver vídeo"
+             data-link="https://www.youtube.com/watch?v=cIL2kvXT5qs">
+            <img src="../imagens/Snapshot_33.png" alt="Quarto vídeo" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Quarto vídeo</h3></div>
         </div>
-    </section>
 
-    <div class="modal" id="modal">
-        <div class="modal-conteudo">
-            <button class="modal-fechar" id="modalFechar" aria-label="Fechar">&times;</button> 
-            <h3 class="modal-titulo" id="modalTitulo"></h3>
-            <div class="modal-tags" id="modalTags"></div>
-            <p class="modal-texto" id="modalTexto"></p>
-            <a class="modal-link" id="modalLink" target="_blank" rel="noopener noreferrer">Ver video</a>
-            <img id="modalImg2" style="display:none" class="modal-img" alt="">
-            <img id="modalImg" class="modal-img" alt="">   
-            
+        <div class="projeto-card"
+             data-titulo="[TADC] That's my GAME!"
+             data-img="../imagens/sonic1213.png"
+             data-img2="../imagens/sonicstory5.gif"
+             data-tags="Animação 2D, TADC"
+             data-texto="Adaptação animada de uma fan-comic que explora um lado mais frustrado do Caine ao achar que ninguém está se divertindo com o jogo dele."
+             data-acao="Ver vídeo"
+             data-link="https://www.youtube.com/watch?v=zf6jXszdDmM">
+            <img src="../imagens/Snapshot_70.PNG" alt="Quinto vídeo" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Quinto vídeo</h3></div>
+        </div>
+
+        <div class="projeto-card"
+             data-titulo="[Izoucha] More than enough"
+             data-img="../imagens/sonic1415.png"
+             data-img2="../imagens/sonicstory6.gif"
+             data-tags="Animação 2D, MHA"
+             data-texto="Adaptei uma fan-comic emocionante que foca em um momento de vulnerabilidade, onde o Deku sente que não está fazendo o suficiente."
+             data-acao="Ver vídeo"
+             data-link="https://www.youtube.com/watch?v=zf6jXszdDmM">
+            <img src="../imagens/Snapshot_100.PNG" alt="Sexto vídeo" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Sexto vídeo</h3></div>
         </div>
     </div>
+</section>
 
+<section id="idiomas" class="sobre">
+    <div class="secao-hero">
+        <img src="../imagens/idiomas.png" class="fotoImagem" alt="Projeto de idiomas">
+        <h2 class="secao-titulo">Projeto de idiomas</h2>
+        <p class="secao-legenda">Aprendendo alemão a partir do inglês</p>
+    </div>
+    <div class="sobre-caixa">
+        <p class="sobre-paragrafo">Construo vocabulário traduzindo temas variados do inglês para o alemão, com apoio de IA, e pratico <em>speaking</em> e <em>writing</em> sobre esse material.</p>
+        <p class="sobre-paragrafo">Em todos os temas o método é o mesmo: crio novas frases a partir do vocabulário para estimular a fala e uso <em>shadowing</em> para aprimorar a pronúncia.</p>
+        <p class="sobre-paragrafo">É a mesma abordagem autodidata que usei no inglês, agora somada à base que ganhei em um curso do Goethe-Institut. O que me interessa é conectar as duas línguas: aprender alemão a partir do inglês, e não do português.</p>
+    </div>
+</section>
 
+<section id="textos" class="projetos">
+    <h2 class="projetos-titulo">Meus textos</h2>
+    <div class="projeto-caixa">
+        <div class="projeto-card" data-titulo="Partes do corpo" data-img="../imagens/corpo.jpg" data-acao="Ver texto" data-texto="Vocabulário de partes do corpo e sintomas, aplicado a diálogos sobre dores e consultas médicas." data-link="../paginasIdiomas/01.html">
+            <img src="../imagens/corpo.jpg" alt="Partes do corpo" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Partes do corpo</h3></div>
+        </div>
+        <div class="projeto-card" data-titulo="Partes do corpo 2" data-img="../imagens/corpo2.jpg" data-acao="Ver texto" data-texto="Vocabulário de metabolismo, circulação e órgãos dos sentidos, aplicado a diálogos sobre check-ups e queixas de saúde." data-link="../paginasIdiomas/02.html">
+            <img src="../imagens/corpo2.jpg" alt="Metabolismo e órgãos dos sentidos" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Partes do corpo 2</h3></div>
+        </div>
+        <div class="projeto-card" data-titulo="Roupas" data-img="../imagens/camisa.png" data-acao="Ver texto" data-texto="Vocabulário de roupas, aplicado a diálogos sobre escolhas de vestuário para o calor, o frio e pequenos reparos." data-link="../paginasIdiomas/03.html">
+            <img src="../imagens/camisa.png" alt="Roupas" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Roupas</h3></div>
+        </div>
+        <div class="projeto-card" data-titulo="Comida" data-img="../imagens/comidaaa.png" data-acao="Ver texto" data-texto="Vocabulário de comidas e bebidas, aplicado a diálogos sobre café da manhã e preparo de pratos." data-link="../paginasIdiomas/04.html">
+            <img src="../imagens/comidaaa.png" alt="Comidas e bebidas" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Comida</h3></div>
+        </div>
+        <div class="projeto-card" data-titulo="Fazenda" data-img="../imagens/fazenda.png" data-acao="Ver texto" data-texto="Vocabulário rural, aplicado a um diálogo sobre estábulo, jardim, campo arado e poço." data-link="../paginasIdiomas/05.html">
+            <img src="../imagens/fazenda.png" alt="Fazenda" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Fazenda</h3></div>
+        </div>
+        <div class="projeto-card" data-titulo="Jardinagem" data-img="../imagens/jardim.jpg" data-acao="Ver texto" data-texto="Vocabulário de jardinagem e reforma doméstica, aplicado a diálogos sobre cuidar do terreno e pintar a parede." data-link="../paginasIdiomas/06.html">
+            <img src="../imagens/jardim.jpg" alt="Jardinagem" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Jardinagem</h3></div>
+        </div>
+        <div class="projeto-card" data-titulo="Mobília" data-img="../imagens/moveis.jpg" data-acao="Ver texto" data-texto="Vocabulário de móveis e organização da casa, aplicado a diálogos sobre heranças de família e montagem de um quarto." data-link="../paginasIdiomas/07.html">
+            <img src="../imagens/moveis.jpg" alt="Móveis" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Mobília</h3></div>
+        </div>
+        <div class="projeto-card" data-titulo="Política" data-img="../imagens/politico.jpeg" data-acao="Ver texto" data-texto="Vocabulário de política e cidadania, aplicado a diálogos sobre democracia, eleições e constituição." data-link="../paginasIdiomas/08.html">
+            <img src="../imagens/politico.jpeg" alt="Política" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Política</h3></div>
+        </div>
+        <div class="projeto-card" data-titulo="Viagens" data-img="../imagens/viagem.jpeg" data-acao="Ver texto" data-texto="Vocabulário de viagens e natureza, aplicado a um diálogo sobre destinos de férias e experiências ao ar livre." data-link="../paginasIdiomas/09.html">
+            <img src="../imagens/viagem.jpeg" alt="Viagens" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Viagens</h3></div>
+        </div>
+    </div>
+</section>
+
+<section id="hobbys" class="projetos">
+    <div class="secao-hero">
+        <img src="../imagens/Hobby-Icon-Graphics-58831366-1.jpg" class="fotoImagem" alt="Hobbys">
+        <h2 class="secao-titulo">Hobbys</h2>
+        <p class="secao-legenda">O que faço quando não estou produzindo</p>
+    </div>
+    <div class="projeto-caixa projeto-caixa--tres">
+        <div class="projeto-card"
+             data-titulo="Bike"
+             data-img="../imagens/amigos.jpeg"
+             data-img2="../imagens/amigos2.jpeg"
+             data-texto="Gosto de explorar a cidade de bike com os amigos, sempre em busca de lugares que ainda não conheço."
+             data-acao="Ver mais"
+             data-link="#">
+            <img src="../imagens/bicicleta.png" alt="Desenho" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Bike</h3></div>
+        </div>
+
+        <div class="projeto-card"
+             data-titulo="Games"
+             data-img="../imagens/lego1.jpeg"
+             data-img2="../imagens/lego2.jpeg"
+             data-texto="Desde criança, sempre gostei de colecionar carros da linha Lego Technic e mantenho esse hábito até hoje, sempre que possível."
+             data-acao="Ver mais"
+             data-link="#">
+            <img src="../imagens/legoo.png" alt="Games" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Lego</h3></div>
+        </div>
+
+        <div class="projeto-card"
+             data-titulo="Música"
+             data-img="../imagens/familia1.jpeg"
+             data-img2="../imagens/familia2.jpeg"
+             data-texto="Tenho paixão por viajar em família e descobrir novos lugares e culturas."
+             data-acao="Ver mais"
+             data-link="#">
+            <img src="../imagens/viage.png" alt="Música" class="fotoprojeto">
+            <div class="textotexto"><h3 class="info-projeto-titulo">Viajar</h3></div>
+        </div>
+    </div>
+</section>
+
+<section id="ferramentas" class="ferramentas">
+    <h2 class="ferramentas-titulo">Softwares e ferramentas utilizadas nos Projetos</h2>
+    <div class="imagens-card">
+        <div class="rede_social">
+            <a href="https://filmora.wondershare.net/pt-br/" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/images.png" alt="Filmora"></a>
+        </div>
+        <div class="rede_social">
+            <a href="https://pivotanimator.net" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/pivot-animator.jpg" alt="Pivot Animator"></a>
+        </div>
+        <div class="rede_social">
+            <a href="https://www.amazon.com.be/-/en/Joachim-Busse/dp/3885326590" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/112FX2TrjAL.jpg" alt="Dicionário ilustrado de alemão"></a>
+        </div>
+        <div class="rede_social">
+            <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.jpg" alt="ChatGPT"></a>
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="modal-conteudo">
+        <button class="modal-fechar" id="modalFechar" aria-label="Fechar">&times;</button>
+        <img id="modalImg2" class="modal-img" style="display:none" alt="">
+        <img id="modalImg" class="modal-img" alt="">
+        <h3 class="modal-titulo" id="modalTitulo"></h3>
+        <div class="modal-tags" id="modalTags"></div>
+        <p class="modal-texto" id="modalTexto"></p>
+        <a class="modal-link" id="modalLink" target="_blank" rel="noopener noreferrer">Ver mais</a>
+    </div>
+</div>
 </body>
 </html>

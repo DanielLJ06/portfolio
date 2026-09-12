@@ -347,7 +347,7 @@ body{
 
 .cabecalho-texto-frase{
     font-size: 1em;
-    color: var(--text);
+    color: rgb(124, 124, 124);
 }
 @keyframes modalFade {
     from { opacity: 0; }

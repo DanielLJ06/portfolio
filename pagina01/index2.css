@@ -131,7 +131,7 @@ body {
 #idiomas .secao-hero .fotoImagem { animation-delay: 0.8s; }
 #hobbys  .secao-hero .fotoImagem { animation-delay: 1.6s; }
 
-/* ===== SOBRE ===== */
+
 .sobre {
     padding: 3rem 2rem;
 }
@@ -231,7 +231,7 @@ body {
     color: var(--text);
 }
 
-/* ===== FERRAMENTAS ===== */
+
 .ferramentas {
     padding: 4.5rem 2rem;
     text-align: center;
@@ -378,7 +378,6 @@ body {
     to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-/* ===== RESPONSIVO ===== */
 @media (max-width: 600px) {
     .menu { gap: 1.25rem; }
     .fotoImagem { width: 200px; height: 200px; }
@@ -390,5 +389,5 @@ body {
 
 .cabecalho-texto-frase{
     font-size: 1em;
-    color: var(--text);
+    color: rgb(124, 124, 124);
 }

@@ -345,6 +345,10 @@ body{
     display: none;
 }
 
+.cabecalho-texto-frase{
+    font-size: 1em;
+    color: var(--text);
+}
 @keyframes modalFade {
     from { opacity: 0; }
     to   { opacity: 1; }

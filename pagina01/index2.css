@@ -387,3 +387,8 @@ body {
     .modal-conteudo { padding: 1.25rem; }
     .modal-img { height: 190px; }
 }
+
+.cabecalho-texto-frase{
+    font-size: 1em;
+    color: var(--text);
+}
